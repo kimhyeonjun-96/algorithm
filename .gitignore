@@ -4,10 +4,8 @@
 
 # IntelliJ
 out/
-
-### Java ###
-# Compiled class file
-*.class
+!**/src/main/**/out/
+!**/src/test/**/out/
 
 # Log file
 *.log
@@ -17,6 +15,5 @@ out/
 *.zip
 *.tar.gz
 
-### macOS ###
-# General
+# macOS
 .DS_Store
