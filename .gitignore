@@ -1,6 +1,9 @@
 # Gradle
-.idea/**/gradle.xml
-.idea/**/libraries
+.idea/**
+gradle/
+/**/*.gitignore
+/**/[gradle]
+
 
 # IntelliJ
 out/
