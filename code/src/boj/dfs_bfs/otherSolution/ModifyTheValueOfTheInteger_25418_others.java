@@ -1,4 +1,4 @@
-package org.boj.dfs_bfs.otherSolution;
+package boj.dfs_bfs.otherSolution;
 
 /*
 * 도움 받은 사이트 : https://nahwasa.com/entry/%EC%9E%90%EB%B0%94-%EB%B0%B1%EC%A4%80-25418-%EC%A0%95%EC%88%98-a%EB%A5%BC-k%EB%A1%9C-%EB%A7%8C%EB%93%A4%EA%B8%B0-java

@@ -1,4 +1,4 @@
-package org.boj.dfs_bfs.mySolution;
+package boj.dfs_bfs.mySolution;
 
 import java.io.BufferedReader;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package org.boj.dfs_bfs.otherSolution;//No17204_죽음의 게임
+package boj.dfs_bfs.otherSolution;//No17204_죽음의 게임
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

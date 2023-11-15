@@ -1,4 +1,4 @@
-package org.boj.dfs_bfs.mySolution;
+package boj.dfs_bfs.mySolution;
 /*
 * 문제 풀이
 * 1. A와 K를 입력 받는다.

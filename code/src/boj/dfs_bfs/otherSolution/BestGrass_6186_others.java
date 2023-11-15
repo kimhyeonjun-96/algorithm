@@ -1,4 +1,4 @@
-package org.boj.dfs_bfs.otherSolution;
+package boj.dfs_bfs.otherSolution;
 
 /*
 도움 받은 사이트 : https://chung-develop.tistory.com/127 [춍춍 블로그:티스토리]

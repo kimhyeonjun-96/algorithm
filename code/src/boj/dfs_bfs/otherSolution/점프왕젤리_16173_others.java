@@ -1,4 +1,4 @@
-package org.boj.dfs_bfs.otherSolution;
+package boj.dfs_bfs.otherSolution;
 
 /*
 * 도움 받은 사이트 : https://tang25.tistory.com/entry/%EC%9E%90%EB%B0%94-%EB%B0%B1%EC%A4%80-16173%EB%B2%88-%EC%A0%90%ED%94%84%EC%99%95-%EC%A9%B0%EB%A6%ACSmall

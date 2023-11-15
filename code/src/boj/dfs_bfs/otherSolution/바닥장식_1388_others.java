@@ -1,4 +1,4 @@
-package org.boj.dfs_bfs.otherSolution;
+package boj.dfs_bfs.otherSolution;
 /*
  * 도움 받은 사이트 : https://read-me.tistory.com/entry/JAVABOJS3-1388-%EB%B0%94%EB%8B%A5-%EC%9E%A5%EC%8B%9D#toc-%EC%B6%9C%EB%A0%A5
  *
