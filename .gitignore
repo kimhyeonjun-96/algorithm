@@ -1,8 +1,8 @@
 # Gradle
-.idea/**
-gradle/
-/**/*.gitignore
-/**/[gradle]
+.idea
+.gradle
+**/build/
+!src/**/build/
 
 
 # IntelliJ
