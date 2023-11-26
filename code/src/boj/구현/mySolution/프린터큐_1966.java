@@ -20,7 +20,7 @@ package boj.구현.mySolution;
  *3.배운 것
  *  시간복잡도 공부 필요..
  *  자료구조와 알고리즘 공부 확실히!
- * 
+ *
  * */
 
 import java.io.BufferedReader;
