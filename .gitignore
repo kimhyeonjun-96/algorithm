@@ -4,6 +4,7 @@ out/
 !**/src/test/**/out/
 src/**/try_again_algorithm/**
 src/**/boj/step_by_step_boj/**
+!**/src/**/data_structure
 
 ### Eclipse ###
 .apt_generated
