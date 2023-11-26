@@ -1,7 +1,7 @@
 ### IntelliJ IDEA ###
 out/
-#!**/src/main/**/out/
-#!**/src/test/**/out/
+!**/src/main/**/out/
+!**/src/test/**/out/
 src/**/try_again_algorithm/**
 src/**/boj/step_by_step_boj/**
 
