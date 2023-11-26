@@ -117,10 +117,10 @@ class MyLinkedList<E>{
         if(prevNode.next == null) lastNode = prevNode;
         size--;
     }
-    public void remove(int idx){
-        if(idx == 0) removeFirst();
-        else removeNext(getNode(idx-1));
-    }
+//    public void remove(int idx){
+//        if(idx == 0) removeFirst();
+//        else removeNext(getNode(idx-1));
+//    }
 }
 public class DataStructure_List {
 
