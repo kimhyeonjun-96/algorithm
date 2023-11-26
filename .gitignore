@@ -1,10 +1,12 @@
 ### IntelliJ IDEA ###
+.idea
+.gitignore
+*.iml
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
-src/try_again_boj/**/
-src/boj/**/step_by_step_boj/
-#src/**/boj/step_by_step_boj/**
+/src/try_again_boj/**/
+/src/boj/**/step_by_step_boj/
 
 ### Eclipse ###
 .apt_generated
