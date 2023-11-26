@@ -6,6 +6,7 @@ out/
 !**/src/main/**/out/
 !**/src/test/**/out/
 /src/try_again_boj/**/
+/src/data_structure/**/
 /src/boj/**/step_by_step_boj/
 
 ### Eclipse ###
