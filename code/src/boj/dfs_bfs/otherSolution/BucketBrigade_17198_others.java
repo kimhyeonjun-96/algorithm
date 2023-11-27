@@ -31,7 +31,7 @@ public class BucketBrigade_17198_others {
     static char[][] graph;
     static int[] x_line = {-1, 1, 0, 0};
     static int[] y_line = {0, 0, -1, 1};
-    static int startX, startY, endX, endY;
+    static int startX, startY;
     static boolean[][] visited;
 
     private static void bfs(int x, int y) {
@@ -70,17 +70,13 @@ public class BucketBrigade_17198_others {
         for(int i=0; i<graph.length; i++){
             char[] str = br.readLine().toCharArray();
             for(int j=0; j<graph[i].length; j++){
-                if(str[j] == 'L'){
+                if (str[j] == 'B') {
                     startX = i;
                     startY = j;
-                }
-                if (str[j] == 'B') {
-                    endX = i;
-                    endY = j;
                 }
                 graph[i][j] = str[j];
             }
         }
-        bfs(endX,endY);
+        bfs(startX,startY);
     }
 }

@@ -45,8 +45,8 @@ public class BucketBrigade_17198 {
             y = node.getY();
             int cur_cnt = node.getCnt();
 
-            if(x == startX && y == startY){
-                System.out.println(cur_cnt-1);
+            if(graph[x][y] == 'B'){
+                System.out.println(cur_cnt);
                 break;
             }
 
@@ -75,13 +75,9 @@ public class BucketBrigade_17198 {
                     startX = i;
                     startY = j;
                 }
-                if (str[j] == 'B') {
-                    endX = i;
-                    endY = j;
-                }
                 graph[i][j] = str[j];
             }
         }
-        bfs(endX,endY);
+        bfs(startX,startY);
     }
 }
