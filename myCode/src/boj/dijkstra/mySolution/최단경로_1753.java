@@ -1,4 +1,4 @@
-package boj.dfs_bfs.mySolution;
+package boj.dijkstra.mySolution;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -20,6 +20,14 @@ class Edge implements Comparable<Edge>{
     @Override
     public int compareTo(Edge o) {
         return Integer.compare(this.w, o.w);
+    }
+
+    @Override
+    public String toString() {
+        return "Edge{" +
+                "v=" + v +
+                ", w=" + w +
+                '}';
     }
 }
 public class 최단경로_1753 {
@@ -67,6 +75,14 @@ public class 최단경로_1753 {
             graph.get(Integer.parseInt(st.nextToken()))
                  .add(new Edge(Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken())));
         }
+
+        // graph 확인
+       /*for(int i=0; i<graph.size(); i++){
+           for(Edge edge : graph.get(i)){
+               System.out.println(edge.toString());
+           }
+       }*/
+
         Arrays.fill(dist, Integer.MAX_VALUE);
         dist[K] = 0;
 
