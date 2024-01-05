@@ -29,7 +29,9 @@ public class 적록색약_10026 {
     static int[] dx = {-1, 1, 0, 0};
     static int[] dy = {0, 0, -1, 1};
 
-    private static int dfs(int check, int x, int y, char c) {
+    // 상하좌우를 DFS로 탐색하며 색을 확인
+    // 특이점은 check !=0 이라면 greed[nx][ny]의 색이 G이라면 R로 변경되도록 작성
+    private static int dfs(int check, int x, int y, char color) {
         visited[x][y] = true;
 
         for(int i=0; i<4; i++){
@@ -39,7 +41,7 @@ public class 적록색약_10026 {
             if(nx<0 || nx>=n || ny<0 || ny>=n) continue;
             greed[nx][ny] = (check != 0) ? (greed[nx][ny] == 'G' ? 'R' : greed[nx][ny]) : greed[nx][ny];
 
-            if(!visited[nx][ny] && c == greed[nx][ny]) {
+            if(!visited[nx][ny] && color == greed[nx][ny]) {
                 dfs(check, nx, ny, greed[nx][ny]);
             }
         }
@@ -53,6 +55,7 @@ public class 적록색약_10026 {
         n = Integer.parseInt(br.readLine());
         greed = new char[n][n];
 
+        // 그리드에 색 채우기
         for(int i=0; i<n; i++){
             char[] line = br.readLine().toCharArray();
             for(int j=0; j<n; j++){
@@ -60,6 +63,7 @@ public class 적록색약_10026 {
             }
         }
 
+        // 정상과 색약만큼 반복하며 각 구역의 색 구하기
         for(int m=0; m<2; m++){
             visited = new boolean[n][n];
             int cnt = 0;

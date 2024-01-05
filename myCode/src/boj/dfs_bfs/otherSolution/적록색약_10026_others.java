@@ -50,7 +50,6 @@ public class 적록색약_10026_others {
             }
         }
 
-
         // 맵 변경
         for(int i=0; i<n; i++){
             for(int j=0; j<n; j++){
@@ -59,7 +58,6 @@ public class 적록색약_10026_others {
                 }
             }
         }
-
 
         // 바뀐 맵으로 색약의 구역 구하기
         checked = new boolean[n][n];
