@@ -16,6 +16,7 @@ import java.util.StringTokenizer;
  *  O(n)
  * 
  */
+
 public class 약수구하기_2501 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
