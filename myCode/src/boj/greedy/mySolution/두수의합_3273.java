@@ -23,12 +23,11 @@ public class 두수의합_3273 {
             for(int j=0; j<n; j++){
                 if(arr[i] == arr[j]) continue;
                 if((arr[i] + arr[j]) == x) {
-                    System.out.println("arr[" + i +  "] + "  + "arr[" + j + "] = " + (arr[i] + arr[j]) );
                     cnt++;
                 }
             }
         }
-        System.out.println(cnt);
+        System.out.println(cnt/2);
     }
 }
 

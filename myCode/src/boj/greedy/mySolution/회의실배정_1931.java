@@ -61,3 +61,42 @@ public class 회의실배정_1931 {
         System.out.println(cnt);
     }
 }
+
+//    public static void main(String[] args) throws IOException {
+//        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//        int n = Integer.parseInt(br.readLine());
+//        ArrayList<Map<Integer, Integer>> arr = new ArrayList<Map<Integer, Integer>>();
+//
+//        for(int i=0; i<n; i++){
+//            StringTokenizer st = new StringTokenizer(br.readLine());
+//
+//            arr.add(new HashMap<>());
+//            arr.get(i).put(Integer.parseInt(st.nextToken()), Integer.parseInt(st.nextToken()));
+//        }
+//
+//        // 시작시간으로 정렬
+//        Collections.sort(arr, new Comparator<Map<Integer, Integer>>() {
+//            @Override
+//            public int compare(Map<Integer, Integer> o1, Map<Integer, Integer> o2) {
+//                return Integer.compare(o1.values().iterator().next(), o2.values().iterator().next());
+//            }
+//        });
+//
+//        // 정렬 확인
+////        for (Map<Integer, Integer> map : arr) {
+////            System.out.print(map.keySet().iterator().next() + " : " + map.values().iterator().next());
+////            System.out.println();
+////        }
+//
+//        int cnt = 0;
+//        int endTime = 0;
+//        for(Map<Integer, Integer> meeting : arr){
+//            int start = meeting.keySet().iterator().next();
+//            if(start >= endTime){
+//                endTime = meeting.values().iterator().next();
+//                cnt++;
+//            }
+//        }
+//        System.out.println(cnt);
+//    }
