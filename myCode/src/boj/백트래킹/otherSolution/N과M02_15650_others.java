@@ -16,6 +16,7 @@ import java.util.StringTokenizer;
 public class N과M02_15650_others {
     static int[] arr;
     static int N, M;
+
     static StringBuilder sb = new StringBuilder();
 
     public static void main(String[] args) throws IOException {
