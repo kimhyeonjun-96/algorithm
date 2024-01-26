@@ -6,31 +6,24 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class N과M06_105655 {static int N, M;
+public class N과M06_15655 {
+    static int N, M;
     static int[] arr;
     static int[] result;
     static StringBuilder sb = new StringBuilder();
-    static boolean[] visit;
 
     private static void dfs(int at, int depth) {
         if(depth == M){
-            for (int val : arr) {
+            for (int val : result) {
                 sb.append(val).append(" ");
             }
             sb.append("\n");
             return;
         }
 
-        for(int i=0; i<arr.length; i++){
-            if(!visit[i]){
-                visit[i] = true;
-
-                result[depth] = arr[i];
-                dfs(at+1, depth+1);
-
-                visit[i] = false;
-            }
-
+        for(int i=at; i<arr.length; i++){
+            result[depth] = arr[i];
+            dfs(i+1, depth+1);
         }
     }
 
@@ -43,7 +36,6 @@ public class N과M06_105655 {static int N, M;
 
         arr = new int[N];
         result = new int[M];
-        visit = new boolean[N];
 
         st = new StringTokenizer(br.readLine());
         for(int i=0; i<N; i++){
@@ -51,7 +43,7 @@ public class N과M06_105655 {static int N, M;
         }
         Arrays.sort(arr);
 
-        dfs(1, 0);
+        dfs(0,0);
         System.out.println(sb);
     }
 }
