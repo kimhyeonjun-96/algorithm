@@ -13,8 +13,6 @@ public class 단어뒤집기2_17413 {
 
         // 문자열 길이만큼 반복
         for(int i=0; i<s.length(); i++){
-            String tmp = "";
-
             if(s.charAt(i) == '<'){ // '<'를 만났다면
                 while (s.charAt(i) != '>'){ // '>'까지 추가
                     sb.append(s.charAt(i));
@@ -24,20 +22,24 @@ public class 단어뒤집기2_17413 {
             } else if(s.charAt(i) == ' '){ // 공백을 만났다면
                 sb.append(' '); // 공백 추가
             }else{ // 단어를 만났다면
-                int start = i; // 단어의 시작 위치 저장
-                while (i < s.length() && s.charAt(i) != ' ' && s.charAt(i) != '<'){ // 공백도 태그의 시작도 아니라면 i 증가
+                int start = i; // 단어의 시작 위치
+                while (i < s.length() && s.charAt(i) != ' ' && s.charAt(i) != '<'){ // 공백, 태그의 시작도 아니라면 i 증가, 단어의 길이만큼 i 증가
                     i++;
                 }
-                int end = i - 1; // 단어의 마지막 위치 저장
+                int end = i - 1; // 단어의 마지막 위치
                 for(int j= end; j>= start; j--){ // 반대의 값으로 문자를 저장
                     sb.append(s.charAt(j));
                 }
-                i--; // 마지막 문자 처리후 1 감소, 감소하지 않으면 공백이 들어가지 않음 ex. baekjoon online judge -> i=7, i=14, i=20
+                i--; // 마지막 문자 처리후 1 감소, 감소하지 않으면 공백이 들어가지 않음 ex. baekjoon online judge -> 원래는 8 => i=7, i=14, i=20
             }
         }
         System.out.println(sb);
     }
 }
+
+
+
+
 
 
 /**
