@@ -29,8 +29,9 @@ public class DFS_BFS_1260 {
             graph.get(Integer.parseInt(str[0])).add(Integer.parseInt(str[1]));
             graph.get(Integer.parseInt(str[1])).add(Integer.parseInt(str[0]));
 
-            graph.get(Integer.parseInt(str[0])).sort((Comparator.naturalOrder()));
-            graph.get(Integer.parseInt(str[1])).sort((Comparator.naturalOrder()));
+//            graph.get(Integer.parseInt(str[0])).sort((Comparator.naturalOrder()));
+//            graph.get(Integer.parseInt(str[1])).sort((Comparator.naturalOrder()));
+            System.out.println("graph = " + graph);
         }
     }
     static void dfs(int idx){
